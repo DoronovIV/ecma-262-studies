@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/.angular
 
 # Node
 /node_modules
@@ -32,8 +33,6 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-/leaflet-geometryutil
-/leaflet-ant-path
 
 # System files
 .DS_Store

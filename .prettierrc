@@ -11,6 +11,8 @@
     "^@angular/(core|common|router|cdk|material|forms|animations|platform-browser)",
     "^@ng",
     "^@smarttwin",
+    "^@app",
+    "^@ui",
     "^[./]"
   ],
   "importOrderParserPlugins": ["typescript", "decorators-legacy", "classProperties"],
