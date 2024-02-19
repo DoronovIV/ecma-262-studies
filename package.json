@@ -2,14 +2,19 @@
   "name": "ecma-262-studies",
   "version": "1.0.0",
   "description": "A space for my experiments for learning ES6, TypeScript and other stuff.",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@babel/preset-env": "^7.23.9",
+    "babel": "^6.23.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "prompt-sync": "^4.2.0"
   }
 }
