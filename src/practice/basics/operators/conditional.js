@@ -65,8 +65,14 @@ export class ConditionalSet {
 
   /** 11th ordinal */
   static 6() {
+    let promptResult;
+    let condition = false;
+
     do {
-      const promptResult = prompt('Enter a number greater than 100.\nYou: ');
-    } while (promptResult && promptResult <= 100);
+      promptResult = Number(prompt('Enter a number greater than 100: '));
+      condition = isNaN(promptResult) || promptResult <= 100;
+    } while (condition);
+
+    return promptResult;
   }
 }

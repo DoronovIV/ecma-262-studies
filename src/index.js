@@ -1,7 +1,7 @@
-import { FirstSet } from './practice/basics/index.js';
+import { ConditionalSet } from './practice/basics/operators/conditional.js';
 
 (function run(args) {
-  const res = FirstSet[8]();
+  const res = ConditionalSet[6]();
 
   console.log(res);
 })();

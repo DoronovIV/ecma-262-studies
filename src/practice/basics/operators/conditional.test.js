@@ -19,7 +19,7 @@ describe('task 6 ternary expression', () => {
     expect(fn('pizza')).toEqual('Нет логина');
   });
 
-  it("should return ''", () => {
+  it('should return empty string', () => {
     expect(fn('')).toEqual('');
   });
 });
