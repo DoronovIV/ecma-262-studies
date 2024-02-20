@@ -3,7 +3,7 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
-export class FirstSet {
+export class ArithmeticalSet {
   /** expected result: [2, 1] */
   static 1() {
     let a = 1;
@@ -45,7 +45,7 @@ export class FirstSet {
       '  -9  ' - 5, //    NaN
       null + 1, //        1
       undefined + 1, //   NaN
-      ' \t \n' - 2, //    NaN
+      ' \t \n' - 2, //    NaN       // -2
     ];
   }
 
@@ -66,4 +66,18 @@ export class FirstSet {
       return sum + val;
     }, 0);
   }
+
+  static 5() {
+    return [
+      5 > 4, //                   // true    // no comment
+      "ананас" > "яблоко", //     // false   // if length is identical, strings are compared char by char
+      "2" > "12", //              // -false- // STRINGS ARE NEVER COMPARED BY LENGTH
+      undefined == null, //       // true    // undefined is loosely equal to null by default
+      undefined === null, //      // false   // undefined does not strictly equal to anything
+      null == "\n0\n", //         // -true-  // NULL DOES NOT EQUAL ZERO BY ANY EQUALITY OPERATOR
+      null === +"\n0\n" //        // false   // null will be strictly compared to zero
+    ];
+  }
+
+
 }
