@@ -51,8 +51,13 @@ export class ConditionalSet {
   }
 
   /** 10th ordinal */
-  static 5() {
-    const steps = 3;
+  static 5(inputSteps) {
+    let steps = 0;
+
+    if (inputSteps) {
+      steps = inputSteps;
+    }
+
     let i = 0;
 
     while (i < steps) {
@@ -74,5 +79,68 @@ export class ConditionalSet {
     } while (condition);
 
     return promptResult;
+  }
+
+  /** 12th ordinal */
+  static 7(inputLimit) {
+    let limit;
+    const primeNumbers = [];
+
+    if (inputLimit === undefined) {
+      limit = prompt('Enter a limit number: ');
+    } else {
+      limit = inputLimit;
+    }
+
+    if (limit < 1) {
+      return [];
+    }
+
+    outerLoop: for (let i = 2; i <= limit; i++) {
+      for (let j = 0; j < i; j++) {
+        if (i % j === 0) {
+          continue outerLoop;
+        }
+
+        if (!primeNumbers.find((el) => el === i)) {
+          primeNumbers.push(i);
+        }
+      }
+    }
+
+    return primeNumbers;
+  }
+
+  /** 13th ordinal */
+  static 8(input) {
+    if (input === null || input === undefined) {
+      return null;
+    }
+
+    switch (input) {
+      case 0:
+        return 0;
+      case 1:
+        return 1;
+      case 2:
+      case 3:
+        return '2 или 3';
+    }
+  }
+
+  static 9(inputA, inputB) {
+    if ([inputA, inputB].some((v) => v === null || v === undefined)) {
+      return null;
+    }
+
+    if (inputA < inputB || isNaN(inputA)) {
+      return inputA;
+    }
+
+    return inputB;
+  }
+
+  static 10() {
+    /** TODO */
   }
 }
