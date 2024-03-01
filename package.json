@@ -2,10 +2,12 @@
   "name": "ecma-262-studies",
   "version": "1.0.0",
   "description": "A space for my experiments for learning ES6, TypeScript and other stuff.",
-  "main": "./src/index.js",
+  "main": "./src/main.js",
   "type": "module",
   "scripts": {
-    "test": "jest --watchAll"
+    "start": "node .",
+    "test-watch": "jest --watchAll",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
