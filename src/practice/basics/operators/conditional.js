@@ -61,7 +61,6 @@ export class ConditionalSet {
     let i = 0;
 
     while (i < steps) {
-      console.log(`number ${i}!`);
       i++;
     }
 
@@ -128,6 +127,7 @@ export class ConditionalSet {
     }
   }
 
+  /** 14th ordinal */
   static 9(inputA, inputB) {
     if ([inputA, inputB].some((v) => v === null || v === undefined)) {
       return null;
@@ -140,7 +140,25 @@ export class ConditionalSet {
     return inputB;
   }
 
-  static 10() {
-    /** TODO */
+  /** 15th ordinal */
+  static 10(question) {
+    const yes = () => {
+      return 'Вы согласились.';
+    };
+    const no = () => {
+      return 'Вы отменили выполнение.';
+    };
+
+    const confirm = () => {
+      return question.length > 10;
+    };
+
+    /** FE restructured into AF */
+    const ask = () => {
+      if (confirm(question)) return yes();
+      else return no();
+    };
+
+    return ask();
   }
 }

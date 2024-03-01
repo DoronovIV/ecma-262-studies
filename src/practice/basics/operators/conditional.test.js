@@ -222,16 +222,20 @@ describe('task 15 function expression vs arrow lambda', () => {
   beforeEach(() => {
     testFn = ConditionalSet[10];
 
-    yes = () => 'Вы согласились.';
-    no = () => 'Вы отменили выполнение.';
+    yes = () => {
+      return 'Вы согласились.';
+    };
+    no = () => {
+      return 'Вы отменили выполнение.';
+    };
 
     confirm = (question) => {
       return question.length > 10;
     };
 
     checkFn = function ask(question) {
-      if (confirm(question)) yes();
-      else no();
+      if (confirm(question)) return yes();
+      else return no();
     };
   });
 
@@ -240,4 +244,18 @@ describe('task 15 function expression vs arrow lambda', () => {
 
     expect(testFn(question)).toEqual(checkFn(question));
   });
+
+  it("should return 'Вы согласились.' for long string", () => {
+    question = '11111111111111111111111111111111111111';
+
+    expect(testFn(question)).toEqual(checkFn(question));
+  });
+
+  it("should return 'Вы согласились.' for default 'Вы согласны?' string", () => {
+    question = 'Вы согласны?';
+
+    expect(testFn(question)).toEqual(checkFn(question));
+  });
 });
+
+
