@@ -1,5 +1,6 @@
 'use strict';
 
+/** 13 tasks in total */
 export class ObjectSet {
   static 1(input) {
     if (typeof input === 'object') {

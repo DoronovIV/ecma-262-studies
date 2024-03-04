@@ -3,6 +3,9 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
+/** 10 tasks in total
+ * from 6th to 15th
+ */
 export class ConditionalSet {
   /** 6th ordinal */
   static 1(login) {

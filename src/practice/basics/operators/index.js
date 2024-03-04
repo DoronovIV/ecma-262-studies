@@ -1,2 +1,1 @@
-export { ArithmeticalSet } from './arithmetical.js';
-export { ConditionalSet } from './conditional.js';
+export { FirstSet } from './first-set/index.js';

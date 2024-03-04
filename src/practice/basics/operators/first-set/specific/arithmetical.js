@@ -3,6 +3,9 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
+/** 5 tasks in total
+ * from 1st to 5th
+ */
 export class ArithmeticalSet {
   /** expected result: [2, 1] */
   static 1() {

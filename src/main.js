@@ -1,7 +1,7 @@
-import { ConditionalSet } from './practice/basics/operators/conditional.js';
+import { FirstSet } from './practice/index.js';
 
 (function run(args) {
-  const res = ConditionalSet[10]('111111111111111111111111111111111111111');
+  const res = FirstSet.tasks[15]('111111111111111111111111111111111111111');
 
   console.log(res);
 })();
