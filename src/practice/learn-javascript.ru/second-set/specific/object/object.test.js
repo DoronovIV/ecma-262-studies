@@ -1,7 +1,7 @@
 'use strict';
 
 import clone from 'just-clone';
-import { ObjectSet } from './object';
+import { ObjectSet } from './object-set';
 
 /** bit shorter version of JSON.stringify */
 const str = (input) => {

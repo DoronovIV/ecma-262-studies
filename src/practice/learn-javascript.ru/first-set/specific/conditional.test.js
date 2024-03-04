@@ -1,4 +1,4 @@
-import { ConditionalSet } from './conditional.js';
+import { ConditionalSet } from './conditional-set.js';
 
 /** task 6 */
 describe('task 6 ternary expression', () => {
@@ -257,5 +257,3 @@ describe('task 15 function expression vs arrow lambda', () => {
     expect(testFn(question)).toEqual(checkFn(question));
   });
 });
-
-
