@@ -1,11 +1,10 @@
-import { ConditionalSet } from './conditional-set.js';
+import { FirstSet } from './first-set.js';
 
-/** task 6 */
 describe('task 6 ternary expression', () => {
   let fn = null;
 
   beforeEach(() => {
-    fn = ConditionalSet[1];
+    fn = FirstSet[6];
   });
 
   it("should return 'Привет'", () => {
@@ -25,7 +24,6 @@ describe('task 6 ternary expression', () => {
   });
 });
 
-/** task 10 */
 describe('task 10 loop replacement', () => {
   let testFn = null;
   let runComparatorLogic = null;
@@ -36,7 +34,7 @@ describe('task 10 loop replacement', () => {
   beforeEach(() => {
     steps = null;
 
-    testFn = ConditionalSet[5];
+    testFn = FirstSet[10];
     runForLoop = (steps) => {
       let i = 0;
 
@@ -73,12 +71,11 @@ describe('task 10 loop replacement', () => {
   });
 });
 
-/** task 12 */
 describe('task 12 prime number search within a limit', () => {
   let fn = null;
 
   beforeEach(() => {
-    fn = ConditionalSet[7];
+    fn = FirstSet[12];
   });
 
   it('should return empty array for 0', () => {
@@ -98,7 +95,6 @@ describe('task 12 prime number search within a limit', () => {
   });
 });
 
-/** task 13 */
 describe("task 13 'if' to 'switch' migration", () => {
   let testFn = null;
   let checkFn = null;
@@ -106,7 +102,7 @@ describe("task 13 'if' to 'switch' migration", () => {
   let input = null;
 
   beforeEach(() => {
-    testFn = ConditionalSet[8];
+    testFn = FirstSet[13];
 
     checkFn = (input) => {
       const number = input;
@@ -150,7 +146,6 @@ describe("task 13 'if' to 'switch' migration", () => {
   });
 });
 
-/** task 14 */
 describe('task 14 find min value', () => {
   let testFn = null;
   let checkFn = null;
@@ -159,7 +154,7 @@ describe('task 14 find min value', () => {
   let inputB = null;
 
   beforeEach(() => {
-    testFn = ConditionalSet[9];
+    testFn = FirstSet[14];
 
     checkFn = () => {
       return Math.min(inputA, inputB);
@@ -220,7 +215,7 @@ describe('task 15 function expression vs arrow lambda', () => {
   let no = null;
 
   beforeEach(() => {
-    testFn = ConditionalSet[10];
+    testFn = FirstSet[15];
 
     yes = () => {
       return 'Вы согласились.';

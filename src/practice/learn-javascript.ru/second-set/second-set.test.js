@@ -1,7 +1,7 @@
 'use strict';
 
 import clone from 'just-clone';
-import { ObjectSet } from './object-set';
+import { SecondSet } from './object-set';
 
 /** bit shorter version of JSON.stringify */
 const str = (input) => {
@@ -18,7 +18,7 @@ let expectedOutput = null;
 /** Task 1 */
 describe('task 1 object entries', () => {
   beforeEach(() => {
-    testFn = ObjectSet[1];
+    testFn = SecondSet[1];
   });
 
   it('should return positive example results', () => {
@@ -52,7 +52,7 @@ describe('task 1 object entries', () => {
 /** Task 2 */
 describe('task 2 property deletion', () => {
   beforeEach(() => {
-    testFn = ObjectSet[2];
+    testFn = SecondSet[2];
   });
 
   it('should succeed for example values', () => {

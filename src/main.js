@@ -1,7 +1,7 @@
-import { SecondSet } from './practice/index.js';
+import { FirstSet } from './practice/index.js';
 
 (function run(args) {
-  const res = SecondSet.tasks[2]({ a: 1, b: 2 }, 'b');
+  const res = FirstSet[15]('1231');
 
   console.log(res);
 })();
