@@ -1,3 +1,5 @@
+import clone from 'just-clone';
+
 /** 13 tasks in total */
 export class SecondSet {
   /**

@@ -1,1 +1,1 @@
-export {SecondSet} from './second-set.js';
+export { SecondSet } from './second-set.js';

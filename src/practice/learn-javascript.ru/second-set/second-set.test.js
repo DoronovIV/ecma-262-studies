@@ -1,7 +1,7 @@
 'use strict';
 
 import clone from 'just-clone';
-import { SecondSet } from './object-set';
+import { SecondSet } from './second-set.js';
 
 /** bit shorter version of JSON.stringify */
 const str = (input) => {
